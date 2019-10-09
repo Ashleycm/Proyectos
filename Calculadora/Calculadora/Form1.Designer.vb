@@ -38,6 +38,8 @@ Partial Class Form1
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -177,16 +179,36 @@ Partial Class Form1
         '
         Me.Button15.Location = New System.Drawing.Point(562, 289)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(73, 42)
+        Me.Button15.Size = New System.Drawing.Size(73, 90)
         Me.Button15.TabIndex = 15
         Me.Button15.Text = "="
         Me.Button15.UseVisualStyleBackColor = True
+        '
+        'Button16
+        '
+        Me.Button16.Location = New System.Drawing.Point(404, 337)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(73, 42)
+        Me.Button16.TabIndex = 16
+        Me.Button16.Text = "C"
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.Location = New System.Drawing.Point(484, 338)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(72, 41)
+        Me.Button17.TabIndex = 17
+        Me.Button17.Text = "."
+        Me.Button17.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1058, 546)
+        Me.Controls.Add(Me.Button17)
+        Me.Controls.Add(Me.Button16)
         Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button13)
@@ -226,4 +248,6 @@ Partial Class Form1
     Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents Button15 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
 End Class

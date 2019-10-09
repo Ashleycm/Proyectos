@@ -95,8 +95,7 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        If 
-                n1 > n2 And n1 > n3 Then
+        If (n1 > n2) And (n1 > n3) Then
             caja1 = n1
             If
                 n2 > n3 Then
@@ -105,13 +104,9 @@
             Else
 
 
-                ElseIf n2 > n1 And n2 > n3 Then
-            Else
-
-
             End If
 
-
+        End If
 
 
 
