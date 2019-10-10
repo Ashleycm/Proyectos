@@ -23,42 +23,49 @@
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "1"
 
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "2"
 
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "3"
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "4"
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "5"
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "6"
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "7"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "8"
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Limpia0()
         TextBox1.Text = TextBox1.Text + "9"
     End Sub
 
@@ -113,6 +120,7 @@
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
         TextBox1.Clear()
+        TextBox1.Text = "0"
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
@@ -122,5 +130,16 @@
 
         End If
 
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox1.Text = "0"
+    End Sub
+
+
+    Private Sub Limpia0()
+        If TextBox1.Text = "0" Then
+            TextBox1.Clear()
+        End If
     End Sub
 End Class

@@ -46,6 +46,7 @@ Partial Class Form1
         '
         Me.TextBox1.Location = New System.Drawing.Point(404, 65)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.TextBox1.Size = New System.Drawing.Size(231, 26)
         Me.TextBox1.TabIndex = 0
         '
@@ -69,12 +70,13 @@ Partial Class Form1
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button3.Location = New System.Drawing.Point(562, 97)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(73, 42)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "9"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -226,7 +228,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "``"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
