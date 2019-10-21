@@ -5,7 +5,7 @@
     Dim num2 As Integer = 1
     Dim caja As Integer
     Dim i As Integer = 3
-    Dim variable As Integer = 0
+    Dim variable As Integer
 
 
 
@@ -54,6 +54,25 @@
             m = m + 2
 
         Next
+
+
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim m As Integer
+        caja = CInt(TextBox1.Text)
+        TextBox2.Clear()
+        variable = 0
+
+        While variable <= caja - 1
+
+            TextBox2.Text = TextBox2.Text & m & vbNewLine
+            m += 2
+            variable += 1
+
+        End While
+
 
 
 
